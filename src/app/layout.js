@@ -8,6 +8,7 @@ const fontSans = FontSans({
 
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Shared/Navbar";
+import { Providers } from "./providers";
 
 export const metadata = {
   title: "Create Next App",
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
         )}
       >
         <Navbar />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
