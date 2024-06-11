@@ -4,14 +4,25 @@ import { Button, buttonVariants } from '../ui/button';
 
 const Banner = () => {
   return (
-    <section className='bg-white'>
-      <div className='container mx-auto px-4'>
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5 pt-12 lg:pt-24'>
+    <section className='relative h-screen pt-52 lg:pt-0'>
+      <div className='absolute inset-0'>
+        <Image
+          src='/images/background.jpg'
+          alt='Banner'
+          layout='fill'
+          objectFit='cover'
+          priority={true}
+          className='z-0'
+        />
+        <div className='absolute inset-0 bg-black opacity-50'></div>
+      </div>
+      <div className='relative container mx-auto px-4 h-full flex items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5'>
           <div className='text-center md:text-left mb-10 sm:mb-0'>
-            <h1 className='text-4xl font-bold pb-2'>
+            <h1 className='text-4xl font-bold pb-2 text-white'>
               Welcome to <span className='text-primary'>Gang Shalik</span>
             </h1>
-            <p className='text-lg text-gray-500 py-3'>
+            <p className='text-lg text-gray-300 py-3'>
               A place where you can find all your favorite products
             </p>
             <p className='text-md text-gray-400'>
@@ -26,8 +37,8 @@ const Banner = () => {
               className='rounded-lg shadow-lg'
               src='/images/story/2.jpg'
               alt='Banner'
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               priority={true}
             />
           </div>

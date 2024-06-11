@@ -5,7 +5,7 @@ import { Menus } from '@/lib/Menus'
 
 const Navbar = () => {
   return (
-    <header className="bg-white shadow">
+    <header className="fixed w-full z-30 backdrop-blur-sm bg-black/30">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#" className="text-teal-600">
@@ -17,7 +17,7 @@ const Navbar = () => {
               <ul className="flex items-center gap-6 text-sm">
                 {Menus.map((menu, index) => (
                   <li key={index}>
-                    <a className="text-gray-700 hover:text-gray-900 transition" href={menu.url}>
+                    <a className="text-gray-100 hover:text-gray-900 transition" href={menu.url}>
                       {menu.title}
                     </a>
                   </li>

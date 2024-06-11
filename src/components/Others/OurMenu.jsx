@@ -7,25 +7,25 @@ const menu = [
     name: 'Chicken Burger',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem',
     price: 10.99,
-    image: 'https://via.placeholder.com/150'
+    image: '/images/menus/1.jpg'
   },
   {
     name: 'Chicken Burger',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem',
     price: 10.99,
-    image: 'https://via.placeholder.com/150'
+    image: '/images/menus/3.jpg'
   },
   {
     name: 'Chicken Burger',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem',
     price: 10.99,
-    image: 'https://via.placeholder.com/150'
+    image: '/images/menus/4.jpg'
   },
   {
     name: 'Chicken Burger',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem',
     price: 10.99,
-    image: 'https://via.placeholder.com/150'
+    image: '/images/menus/2.jpg'
   },
 ]
 
