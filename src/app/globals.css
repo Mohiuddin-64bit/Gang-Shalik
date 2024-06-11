@@ -23,6 +23,10 @@
     background-color: white !important;
   }
 
+  .primary-gap {
+    @apply pt-28 pb-28;
+  }
+
   @layer base {
     :root {
       --background: 0 0% 100%;

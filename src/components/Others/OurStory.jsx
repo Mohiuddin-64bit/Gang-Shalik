@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const OurStory = () => {
   return (
-    <section className='container pt-28 mb-52'>
+    <section className='container primary-gap'>
       <TitleSection
         title='Our Story'
         subTitle='TASTY AND CRUNCHY'
