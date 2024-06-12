@@ -21,7 +21,7 @@ const Testimonial = () => {
     <section className='testimonial-section relative'>
       <ParallaxBanner
         layers={[{ image: '/images/story/4.jpg', speed: -50 }]}
-        className="aspect-[1/1] sm:aspect-[3/2] lg:aspect-[4/1]"
+        className="aspect-[1/2] sm:aspect-[3/2] md:aspect-[4/2] lg:aspect-[3/1] xl:aspect-[4/1]"
       />
       <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50' />
       <div className='absolute inset-0 z-10 flex items-center justify-center p-5'>

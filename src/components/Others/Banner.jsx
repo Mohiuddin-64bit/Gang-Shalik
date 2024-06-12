@@ -12,7 +12,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section className='relative h-screen pt-52 lg:pt-0'>
+    <section className='relative min-h-screen pt-36 md:pt-0 pb-20 flex justify-center items-center'>
       <div className='absolute inset-0'>
         <Image
           src='/images/background.jpg'
@@ -24,8 +24,8 @@ const Banner = () => {
         />
         <div className='absolute inset-0 bg-black opacity-50'></div>
       </div>
-      <div className='relative container mx-auto px-4 h-full flex items-center'>
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5'>
+      <div className='relative container mx-auto '>
+        <div className='grid grid-cols-1 lg:grid-cols-2 items-center gap-5'>
           <div
             data-aos="fade-down"
             className='text-center md:text-left mb-10 sm:mb-0'>
@@ -42,13 +42,14 @@ const Banner = () => {
               Shop Now
             </Button>
           </div>
-          <div className='flex justify-center md:justify-end w-full'>
+          <div className='flex relative justify-center md:justify-end h-[200px] md:h-[300px] lg:h-[400px] xl:h-[500px] w-[300px] md:w-[500px] xl:mr-1 mx-auto'>
             <Image
-              className='rounded-lg shadow-lg'
+              className='rounded-lg  shadow-lg'
               src='/images/story/2.jpg'
               alt='Banner'
-              width={400}
-              height={400}
+              objectFit='cover'
+              objectPosition='bottom'
+              layout='fill'
               priority={true}
             />
           </div>

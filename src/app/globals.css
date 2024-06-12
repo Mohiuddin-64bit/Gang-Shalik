@@ -24,7 +24,7 @@
   }
 
   .primary-gap {
-    @apply py-20 lg:py-52 ;
+    @apply py-20 lg:py-24 ;
   }
 
   @layer base {
