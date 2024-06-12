@@ -1,8 +1,16 @@
+"use client"
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Button, buttonVariants } from '../ui/button';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className='relative h-screen pt-52 lg:pt-0'>
       <div className='absolute inset-0'>
@@ -18,9 +26,11 @@ const Banner = () => {
       </div>
       <div className='relative container mx-auto px-4 h-full flex items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5'>
-          <div className='text-center md:text-left mb-10 sm:mb-0'>
+          <div
+            data-aos="fade-down"
+            className='text-center md:text-left mb-10 sm:mb-0'>
             <h1 className='text-4xl font-bold pb-2 text-white'>
-              Welcome to <span className='text-primary'>Gang Shalik</span>
+              Welcome to Gang Shalik
             </h1>
             <p className='text-lg text-gray-300 py-3'>
               A place where you can find all your favorite products
@@ -28,7 +38,7 @@ const Banner = () => {
             <p className='text-md text-gray-400'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem, nemo illo dolores facere dicta cum, velit adipisci quas voluptatum, sed beatae perspiciatis nihil sit expedita in iusto dolore ullam cumque distinctio consectetur et deserunt molestiae. A, error! Aperiam!
             </p>
-            <Button className={`mt-4 ${buttonVariants({ size: "lg" })}`}>
+            <Button className={`mt-4 ${buttonVariants({ variant: "ghost" })}`}>
               Shop Now
             </Button>
           </div>

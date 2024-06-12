@@ -1,10 +1,12 @@
+import { Menus } from '@/lib/Menus'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-gray-100">
+      <footer className="bg-gray-100 mt-12">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600">
             <Image src="/GangShalik.jpg" alt="logo" width={120} height={120} />
@@ -16,29 +18,16 @@ const Footer = () => {
           </p>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
-            </li>
-
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Careers </a>
-            </li>
-
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> History </a>
-            </li>
-
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Services </a>
-            </li>
-
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Projects </a>
-            </li>
-
-            <li>
-              <a className="text-gray-700 transition hover:text-gray-700/75" href="#"> Blog </a>
-            </li>
+            {
+              Menus.map((menu, index) => (
+                <li key={index}>
+                  <Link className="text-gray-700 transition hover:text-gray-700/75" href
+                    ={menu.url}>
+                    {menu.title}
+                  </Link>
+                </li>
+              ))
+            }
           </ul>
 
           <ul className="mt-12 flex justify-center gap-6 md:gap-8">

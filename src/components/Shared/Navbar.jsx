@@ -17,7 +17,7 @@ const Navbar = () => {
               <ul className="flex items-center gap-6 text-sm">
                 {Menus.map((menu, index) => (
                   <li key={index}>
-                    <a className="text-gray-100 hover:text-gray-900 transition" href={menu.url}>
+                    <a className="text-gray-100 hover:text-gray-300 transition" href={menu.url}>
                       {menu.title}
                     </a>
                   </li>

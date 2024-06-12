@@ -12,12 +12,12 @@ export const Menus = [
     url: "/services",
   },
   {
-    title: "Projects",
-    url: "/projects",
-  },
-  {
     title: "Blog",
     url: "/blog",
+  },
+  {
+    title: "Gallery",
+    url: "/gallery",
   },
   {
     title: "Contact",
