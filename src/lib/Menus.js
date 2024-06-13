@@ -8,12 +8,8 @@ export const Menus = [
     url: "/about",
   },
   {
-    title: "Services",
-    url: "/services",
-  },
-  {
-    title: "Blog",
-    url: "/blog",
+    title: "Menus",
+    url: "/menus",
   },
   {
     title: "Gallery",

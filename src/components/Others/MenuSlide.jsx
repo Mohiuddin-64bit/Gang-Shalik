@@ -15,6 +15,7 @@ import 'swiper/css/navigation';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import TitleSection from './TitleSection';
+import Link from 'next/link';
 
 const menus = [
   {
@@ -47,12 +48,12 @@ const GalleryComponent = () => {
   return (
     <section className='mt-5 px-5'>
       <div className='mb-10'>
-      <TitleSection
-        title='Our Gallery'
-        subTitle='TASTY AND CRUNCHY'
-        description='Take a virtual tour through our gallery and immerse yourself in the enchanting ambiance of Gangshalik. Browse through snapshots capturing the natural beauty, cozy interiors, and joyful moments shared within our rustic retreat. Discover why Gangshalik is not just a restaurant, but a destination.'
+        <TitleSection
+          title='Our Gallery'
+          subTitle='TASTY AND CRUNCHY'
+          description='Take a virtual tour through our gallery and immerse yourself in the enchanting ambiance of Gangshalik. Browse through snapshots capturing the natural beauty, cozy interiors, and joyful moments shared within our rustic retreat. Discover why Gangshalik is not just a restaurant, but a destination.'
         />
-        </div>
+      </div>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -86,7 +87,9 @@ const GalleryComponent = () => {
         }
       </Swiper>
       <div className='text-center mt-5'>
-        <Button>View More</Button>
+        <Link href='/gallery'>
+          <Button>View More</Button>
+        </Link>
       </div>
     </section>
   )

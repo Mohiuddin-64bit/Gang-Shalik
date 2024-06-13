@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import MobileNav from '../Others/MobileNav'
 import { Menus } from '@/lib/Menus'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -17,9 +18,9 @@ const Navbar = () => {
               <ul className="flex items-center gap-6 text-sm">
                 {Menus.map((menu, index) => (
                   <li key={index}>
-                    <a className="text-gray-100 hover:text-gray-300 transition" href={menu.url}>
+                    <Link className="text-gray-100 hover:text-gray-300 transition" href={menu.url}>
                       {menu.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

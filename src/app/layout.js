@@ -25,8 +25,12 @@ export default function RootLayout({ children }) {
           fontSans.variable
         )}
       >
+        <div className="">
         <Navbar />
+        </div>
+        <div className="min-h-screen">
         <Providers>{children}</Providers>
+        </div>
         <Footer />
       </body>
     </html>

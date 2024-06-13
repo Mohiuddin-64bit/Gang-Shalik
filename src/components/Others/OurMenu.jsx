@@ -3,6 +3,7 @@ import TitleSection from './TitleSection'
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { foodCategories, menus } from '@/lib/data'
+import Link from 'next/link'
 
 
 const OurMenu = () => {
@@ -43,7 +44,9 @@ const OurMenu = () => {
         </div>
       </div>
       <div className='text-center my-6'>
-        <Button>Show More</Button>
+        <Link href='/menus'>
+          <Button>Show More</Button>
+        </Link>
       </div>
     </section>
   )
