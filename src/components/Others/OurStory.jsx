@@ -17,7 +17,7 @@ const OurStory = () => {
       <TitleSection
         title='Our Story'
         subTitle='TASTY AND CRUNCHY'
-        description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem, nemo illo dolores facere dicta cum, velit adipisci quas voluptatum, sed beatae perspiciatis nihil sit expedita in iusto dolore ullam cumque distinctio consectetur et deserunt molestiae. A, error! Aperiam!'
+        description='At Gangshalik, our journey began with a vision to create a harmonious blend of nature and gastronomy. Inspired by the beauty of our surroundings, we set out to craft a dining experience that celebrates fresh, wholesome ingredients and flavorsome dishes. Discover our commitment to sustainability and community as we invite you to join us in this culinary adventure.'
       />
       <div data-aos="fade-up"
         className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12'>

@@ -13,6 +13,8 @@ import 'swiper/css/pagination';
 import { Pagination, FreeMode, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import Image from 'next/image';
+import { Button } from '../ui/button';
+import TitleSection from './TitleSection';
 
 const menus = [
   {
@@ -41,9 +43,16 @@ const menus = [
   }
 ];
 
-const MenuSlide = () => {
+const GalleryComponent = () => {
   return (
     <section className='mt-5 px-5'>
+      <div className='mb-10'>
+      <TitleSection
+        title='Our Gallery'
+        subTitle='TASTY AND CRUNCHY'
+        description='Take a virtual tour through our gallery and immerse yourself in the enchanting ambiance of Gangshalik. Browse through snapshots capturing the natural beauty, cozy interiors, and joyful moments shared within our rustic retreat. Discover why Gangshalik is not just a restaurant, but a destination.'
+        />
+        </div>
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -76,9 +85,12 @@ const MenuSlide = () => {
           ))
         }
       </Swiper>
+      <div className='text-center mt-5'>
+        <Button>View More</Button>
+      </div>
     </section>
   )
 
 }
 
-export default MenuSlide
+export default GalleryComponent

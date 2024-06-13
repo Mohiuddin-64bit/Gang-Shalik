@@ -36,7 +36,7 @@ const Banner = () => {
               A place where you can find all your favorite products
             </p>
             <p className='text-md text-gray-400'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit exercitationem, nemo illo dolores facere dicta cum, velit adipisci quas voluptatum, sed beatae perspiciatis nihil sit expedita in iusto dolore ullam cumque distinctio consectetur et deserunt molestiae. A, error! Aperiam!
+            Welcome to Gangshalik, where nature meets culinary delight. Step into a serene oasis nestled amidst lush greenery, complete with tranquil water features and charming cottages. Explore our vibrant space designed for families, with a dedicated kids play zone and captivating bird sanctuary.
             </p>
             <Button className={`mt-4 ${buttonVariants({ variant: "ghost" })}`}>
               Shop Now
