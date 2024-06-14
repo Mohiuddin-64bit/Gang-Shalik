@@ -4,6 +4,7 @@ import GalleryComponent from "@/components/Others/MenuSlide";
 import MenuSlide from "@/components/Others/MenuSlide";
 import OurMenu from "@/components/Others/OurMenu";
 import OurStory from "@/components/Others/OurStory";
+import Reservation from "@/components/Others/Reservation";
 import Testimonial from "@/components/Others/Testimonial";
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonial />
       <FoodCategory />
       <GalleryComponent />
+      <Reservation />
     </main>
   );
 }
