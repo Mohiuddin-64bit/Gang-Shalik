@@ -1,3 +1,4 @@
+import PageHeader from '@/components/Others/PageHeader';
 import TitleSection from '@/components/Others/TitleSection'
 import { foodCategories } from '@/lib/data';
 import Image from 'next/image';
@@ -35,18 +36,17 @@ const MenusPage = () => {
   const categoriesToShow = Object.keys(foodCategories[0]);
 
   return (
-    <section className='pt-32 container'>
-      <TitleSection
-        title='All Menu'
-        subTitle='TASTY AND CRUNCHY'
-        description='Indulge in a diverse menu that reflects our passion for quality and variety. From aromatic coffee and delightful snacks to hearty soups, flavorful pastas, and a spectrum of mouthwatering dishes, our menu promises something for every palate. Experience the essence of Gangshalik through each delectable bite.'
-      />
-      <div className=' mt-12'>
-        {categoriesToShow.map((category, catIndex) => (
-          <CategorySection key={catIndex} category={category} items={foodCategories[0][category]} />
-        ))}
-      </div>
-    </section>
+    <>
+      <PageHeader title='All Menu' subTitle='TASTY AND CRUNCHY' description='Indulge in a diverse menu that reflects our passion for quality and variety. From aromatic coffee and delightful snacks to hearty soups.' />
+
+      <section className='pt-32 container'>
+        <div className=' mt-12'>
+          {categoriesToShow.map((category, catIndex) => (
+            <CategorySection key={catIndex} category={category} items={foodCategories[0][category]} />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 

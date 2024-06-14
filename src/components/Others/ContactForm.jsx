@@ -93,7 +93,9 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
+          <div className="text-right">
           <Button type="submit">Submit</Button>
+          </div>
         </form>
       </Form>
     </section>

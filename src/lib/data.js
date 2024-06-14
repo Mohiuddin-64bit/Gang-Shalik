@@ -276,82 +276,77 @@ export const foodCategories = [
 export const galleryImages = [
   {
     src: "/images/menus/1.jpg",
+    category: "Interiors",
     alt: "Gallery 1",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Dishes",
     alt: "Gallery 2",
   },
   {
     src: "/images/menus/3.jpg",
+    category: "Events",
     alt: "Gallery 3",
   },
   {
     src: "/images/menus/4.jpg",
+    category: "Interiors",
     alt: "Gallery 4",
   },
   {
     src: "/images/menus/3.jpg",
+    category: "Dishes",
     alt: "Gallery 5",
   },
   {
     src: "/images/menus/1.jpg",
+    category: "Events",
     alt: "Gallery 2",
   },
   {
     src: "/images/menus/1.jpg",
+    category: "Interiors",
     alt: "Gallery 4",
   },
   {
     src: "/images/menus/1.jpg",
+    category: "Dishes",
     alt: "Gallery 3",
   },
   {
     src: "/images/menus/1.jpg",
+    category: "Events",
     alt: "Gallery 9",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Interiors",
     alt: "Gallery 10",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Dishes",
     alt: "Gallery 11",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Events",
     alt: "Gallery 12",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Interiors",
     alt: "Gallery 13",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Dishes",
     alt: "Gallery 14",
   },
   {
     src: "/images/menus/2.jpg",
+    category: "Events",
     alt: "Gallery 15",
-  },
-  {
-    src: "/images/menus/2.jpg",
-    alt: "Gallery 16",
-  },
-  {
-    src: "/images/menus/2.jpg",
-    alt: "Gallery 17",
-  },
-  {
-    src: "/images/menus/2.jpg",
-    alt: "Gallery 18",
-  },
-  {
-    src: "/images/menus/2.jpg",
-    alt: "Gallery 19",
-  },
-  {
-    src: "/images/menus/2.jpg",
-    alt: "Gallery 20",
-  },
+  }
 ]

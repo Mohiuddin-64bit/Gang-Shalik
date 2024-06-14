@@ -1,16 +1,13 @@
 import ContactForm from '@/components/Others/ContactForm'
+import PageHeader from '@/components/Others/PageHeader'
 import TitleSection from '@/components/Others/TitleSection'
 import React from 'react'
 
 const ContactPage = () => {
   return (
     <>
+      <PageHeader title='Contact' subTitle='TASTY AND CRUNCHY' description='Take a virtual tour through our gallery and immerse yourself in the enchanting ambiance of Gangshalik.' />
       <section className='pt-36 container'>
-        <TitleSection
-          title='Contact Page'
-          subTitle='TASTY AND CRUNCHY'
-          description='Take a virtual tour through our gallery and immerse yourself in the enchanting ambiance of Gangshalik. Browse through snapshots capturing the natural beauty, cozy interiors, and joyful moments shared within our rustic retreat. Discover why Gangshalik is not just a restaurant, but a destination.'
-        />
         <ContactForm />
       </section>
       <div className="w-full mt-5">
