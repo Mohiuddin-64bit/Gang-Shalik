@@ -31,7 +31,7 @@ const Reservation = () => {
     <section className='testimonial-section relative mt-12'>
       <ParallaxBanner
         layers={[{ image: '/images/about/2.png', speed: -50 }]}
-        className="aspect-[1/2] md:aspect-[4/4] lg:aspect-[3/2] xl:aspect-[5/2]"
+        className="aspect-[1/3] md:aspect-[4/4] lg:aspect-[3/2] xl:aspect-[5/2]"
       />
       <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50' />
       <div className='absolute inset-0 z-10 flex flex-col items-center justify-center p-5'>
