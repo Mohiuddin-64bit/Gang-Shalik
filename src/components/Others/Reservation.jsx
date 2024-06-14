@@ -71,6 +71,7 @@ const Reservation = () => {
               />
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+              <FormLabel className= "flex lg:hidden text-white py-3">Date</FormLabel>
               <FormField
                 control={form.control}
                 name="date"
@@ -83,13 +84,14 @@ const Reservation = () => {
                   </FormItem>
                 )}
               />
+              <FormLabel className= "flex lg:hidden text-white py-3">Time</FormLabel>
               <FormField
                 control={form.control}
                 name="time"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="time" className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Phone Number" {...field} />
+                      <Input type="time" className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Time" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
