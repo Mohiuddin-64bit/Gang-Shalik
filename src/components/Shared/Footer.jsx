@@ -13,9 +13,9 @@ const Footer = () => {
           </div>
 
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum
-            itaque neque.
+            Nestled amidst the serene beauty of nature, Gang-Shalik offers an unparalleled dining experience that celebrates the bounty of the earth. Join us for a journey of culinary delight, where every dish tells a story of flavor, tradition, and sustainability.
           </p>
+
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
             {
@@ -81,6 +81,9 @@ const Footer = () => {
               </a>
             </li>
           </ul>
+          <div className="mt-8 text-center text-gray-400">
+            © 2023 Gang-Shalik. All rights reserved.
+          </div>
         </div>
       </footer>
     </div>
