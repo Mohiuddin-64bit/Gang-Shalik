@@ -10,12 +10,13 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination, FreeMode, Navigation } from 'swiper/modules';
+import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import TitleSection from './TitleSection';
 import Link from 'next/link';
+import { galleryImages } from '@/lib/data';
 
 const menus = [
   {
@@ -58,8 +59,12 @@ const GalleryComponent = () => {
         slidesPerView={1}
         spaceBetween={30}
         freeMode={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
-        modules={[FreeMode, Navigation]}
+        modules={[Autoplay, FreeMode, Navigation]}
         className="mySwiper"
         breakpoints={{
           640: {
@@ -77,10 +82,10 @@ const GalleryComponent = () => {
         }}
       >
         {
-          menus.map((menu, index) => (
+          galleryImages.map((menu, index) => (
             <SwiperSlide key={index}>
               <div className='w-72 h-96 '>
-                <Image src={menu.image} objectFit='cover' layout='fill' alt='menu' />
+                <Image src={menu.src} objectFit='cover' layout='fill' alt='menu' />
               </div>
             </SwiperSlide>
           ))
