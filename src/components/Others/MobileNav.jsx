@@ -25,7 +25,7 @@ const MobileNav = () => {
           <ul className="flex gap-6 mt-5">
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com/gangshalikbd"
                 rel="noreferrer"
                 target="_blank"
                 className="text-gray-700 transition hover:text-gray-400/75"

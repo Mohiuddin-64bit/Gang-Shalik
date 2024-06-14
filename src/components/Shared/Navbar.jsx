@@ -27,7 +27,7 @@ const Navbar = () => {
         <ul className="hidden md:flex justify-center gap-6 md:gap-8">
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com/gangshalikbd"
               rel="noreferrer"
               target="_blank"
               className="text-gray-200 transition hover:text-gray-400/75"

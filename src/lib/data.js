@@ -275,77 +275,77 @@ export const foodCategories = [
 
 export const galleryImages = [
   {
-    src: "/images/menus/1.jpg",
+    src: "/images/gallery/gallery(1).jpg",
     category: "Interiors",
     alt: "Gallery 1",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(2).jpg",
     category: "Dishes",
     alt: "Gallery 2",
   },
   {
-    src: "/images/menus/3.jpg",
+    src: "/images/gallery/gallery(3).jpg",
     category: "Events",
     alt: "Gallery 3",
   },
   {
-    src: "/images/menus/4.jpg",
+    src: "/images/gallery/gallery(4).jpg",
     category: "Interiors",
     alt: "Gallery 4",
   },
   {
-    src: "/images/menus/3.jpg",
+    src: "/images/gallery/gallery(5).jpg",
     category: "Dishes",
     alt: "Gallery 5",
   },
   {
-    src: "/images/menus/1.jpg",
+    src: "/images/gallery/gallery(6).jpg",
     category: "Events",
     alt: "Gallery 2",
   },
   {
-    src: "/images/menus/1.jpg",
+    src: "/images/gallery/gallery(7).jpg",
     category: "Interiors",
     alt: "Gallery 4",
   },
   {
-    src: "/images/menus/1.jpg",
+    src: "/images/gallery/gallery(8).jpg",
     category: "Dishes",
     alt: "Gallery 3",
   },
   {
-    src: "/images/menus/1.jpg",
+    src: "/images/gallery/gallery(9).jpg",
     category: "Events",
     alt: "Gallery 9",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(10).jpg",
     category: "Interiors",
     alt: "Gallery 10",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(11).jpg",
     category: "Dishes",
     alt: "Gallery 11",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(12).jpg",
     category: "Events",
     alt: "Gallery 12",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(13).jpg",
     category: "Interiors",
     alt: "Gallery 13",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(14).jpg",
     category: "Dishes",
     alt: "Gallery 14",
   },
   {
-    src: "/images/menus/2.jpg",
+    src: "/images/gallery/gallery(15).jpg",
     category: "Events",
     alt: "Gallery 15",
   }
