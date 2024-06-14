@@ -31,7 +31,7 @@ const Reservation = () => {
     <section className='testimonial-section relative mt-12'>
       <ParallaxBanner
         layers={[{ image: '/images/about/2.png', speed: -50 }]}
-        className="aspect-[1/2] sm:aspect-[3/2] md:aspect-[4/2] lg:aspect-[3/1] xl:aspect-[5/2]"
+        className="aspect-[1/2] md:aspect-[4/4] lg:aspect-[3/2] xl:aspect-[5/2]"
       />
       <div className='absolute top-0 left-0 w-full h-full bg-black opacity-50' />
       <div className='absolute inset-0 z-10 flex flex-col items-center justify-center p-5'>
@@ -43,14 +43,14 @@ const Reservation = () => {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2  mt-5">
 
-            <div className="grid grid-cols-2 gap-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
               <FormField
                 control={form.control}
                 name="name"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className="rounded-none h-14 w-[500px]" placeholder="Name*" {...field} />
+                      <Input className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Name*" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -63,21 +63,21 @@ const Reservation = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className="rounded-none h-14 w-[500px]" placeholder="Phone*" {...field} />
+                      <Input className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Phone*" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
             </div>
-            <div className="grid grid-cols-2 gap-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
               <FormField
                 control={form.control}
                 name="date"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="date" className="rounded-none h-14 w-[500px]" placeholder="Date" {...field} />
+                      <Input type="date" className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Date" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -89,7 +89,7 @@ const Reservation = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="time" className="rounded-none h-14 w-[500px]" placeholder="Phone Number" {...field} />
+                      <Input type="time" className="rounded-none h-14 w-[300px] md:w-[500px]" placeholder="Phone Number" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
